@@ -26,6 +26,7 @@ function App() {
 
   function resetAmount() {
     setBillAmount("");
+    setTips(tipMessages.map((_) => 0));
   }
 
   function logTipChangeAndUpdate(key, value) {
