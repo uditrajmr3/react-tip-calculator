@@ -1,13 +1,89 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.App {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #eeeeee;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1 {
+  color: #2c3e50;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+}
+.tip,
+.amount {
+  margin: 1.5rem 0;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.tip p,
+.amount p {
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+  color: #2c3e50;
+}
+
+.amount span {
+  color: #16a34a;
+}
+input {
+  width: 200px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1.1rem;
+}
+
+select {
+  width: 220px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  background-color: white;
+}
+
+label {
+  display: block;
+  margin: 1rem 0;
+  color: #34495e;
+  font-size: 1.2rem;
+}
+.message-box {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin: 1.5rem 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.message-box p {
+  font-size: 1.1rem;
+  color: #2c3e50;
+  margin: 0.5rem 0;
+}
+
+.message-box span {
+  color: #45aaba;
+}
+
+.message-box strong em {
+  font-style: italic;
+  font-weight: 600;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-wrap: nowrap;
+  gap: 10px;
 }
