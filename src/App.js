@@ -17,7 +17,7 @@ const tipMessages = [
 ];
 
 function App() {
-  const [billAmount, setBillAmount] = useState("100");
+  const [billAmount, setBillAmount] = useState("");
   const [tips, setTips] = useState(tipMessages.map((_) => 0));
 
   function handleBillInput(newAmount) {
@@ -25,7 +25,7 @@ function App() {
   }
 
   function resetAmount() {
-    setBillAmount();
+    setBillAmount("");
   }
 
   function logTipChangeAndUpdate(key, value) {
