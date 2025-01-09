@@ -39,7 +39,7 @@ function App() {
 
   function calculateTip() {
     const tip = tips.reduce((sum, item) => sum + (item * billAmount) / 100, 0);
-    return tip;
+    return tip / tips.length;
   }
 
   return (
