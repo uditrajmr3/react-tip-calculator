@@ -3,18 +3,8 @@ import { useState } from "react";
 import AmountInput from "./Components/AmountInput";
 import TipServices from "./Components/TipServices/TipServices";
 import MessageBox from "./Components/MessageBox/MessageBox";
-import CustomButton from "./Components/CustomButton/CustomButton";
-
-const tipMessages = [
-  {
-    id: 0,
-    message: "How did you like the service?",
-  },
-  {
-    id: 1,
-    message: "How did your friend like the service?",
-  },
-];
+import Actions from "./Components/Actions";
+import { tipMessages } from "./lib/data/tip_messages";
 
 function App() {
   const [billAmount, setBillAmount] = useState("");
@@ -56,25 +46,6 @@ function App() {
         <MessageBox billAmount={billAmount} tipAmount={calculateTip()} />
       )}
       {billAmount.length !== 0 && <Actions resetHandler={resetAmount} />}
-    </div>
-  );
-}
-
-function Actions({ resetHandler, paymentHandler }) {
-  return (
-    <div className="actions">
-      <CustomButton
-        text="Reset"
-        backgroundColor="#ffaaba"
-        color="#fff"
-        onClickHandler={resetHandler}
-      />
-      <CustomButton
-        text="Pay Amount"
-        backgroundColor="#16a34a"
-        color="#fff"
-        onClickHandler={paymentHandler}
-      />
     </div>
   );
 }
